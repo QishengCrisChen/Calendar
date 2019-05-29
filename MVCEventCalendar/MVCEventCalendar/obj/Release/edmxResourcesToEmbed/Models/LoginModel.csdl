@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OneBaseModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="LName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PWReset" Type="Int16" />
+    <Property Name="AccessLevelID" Type="Int16" />
+    <Property Name="ScreenAccess" Type="Int32" />
+    <Property Name="Active" Type="Int16" />
+    <Property Name="Department" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SubDepartment" Type="Int32" />
+    <Property Name="WorkCenter" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="emailAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Hagen_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="EmployeeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmployeePhoto" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Manager" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Position" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PDFFolder" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="PATDockAlert" Type="Int16" />
+    <Property Name="PATReturnAlert" Type="Int16" />
+    <Property Name="PATVerifiedAlert" Type="Int16" />
+    <Property Name="PATCloseOutAlert" Type="Int16" />
+    <Property Name="Management" Type="Boolean" />
+    <Property Name="Directory" Type="Int16" />
+    <Property Name="PhoneDirect" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneCell" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneFax" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneTollFree" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneMain" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneExt" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="SMSAddress" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="AcctFax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HandworkPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Handworkext" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="HRFax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CCFax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address1" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="St" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Zip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="PhotoPath" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="UsePhoto" Type="Int32" />
+    <Property Name="Internal" Type="Int16" />
+    <Property Name="PositionID" Type="Int32" />
+    <Property Name="ShiftID" Type="Int32" />
+    <Property Name="SecurityGroup" Type="Int32" />
+    <Property Name="igroup" Type="Int32" />
+    <Property Name="DirectoryAdmin" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="OneBaseEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_User" EntityType="Self.tbl_User" />
+  </EntityContainer>
+</Schema>

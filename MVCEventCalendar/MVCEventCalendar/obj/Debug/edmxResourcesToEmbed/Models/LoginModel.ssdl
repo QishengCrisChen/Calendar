@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OneBaseModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="255" />
+    <Property Name="FName" Type="nvarchar" MaxLength="255" />
+    <Property Name="LName" Type="nvarchar" MaxLength="255" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Password" Type="nvarchar" MaxLength="255" />
+    <Property Name="PWReset" Type="smallint" />
+    <Property Name="AccessLevelID" Type="smallint" />
+    <Property Name="ScreenAccess" Type="int" />
+    <Property Name="Active" Type="smallint" />
+    <Property Name="Department" Type="nvarchar" MaxLength="255" />
+    <Property Name="SubDepartment" Type="int" />
+    <Property Name="WorkCenter" Type="nvarchar" MaxLength="8" />
+    <Property Name="emailAddress" Type="varchar" MaxLength="500" />
+    <Property Name="Hagen_ID" Type="nvarchar" MaxLength="255" />
+    <Property Name="EmployeeNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmployeePhoto" Type="nvarchar" MaxLength="255" />
+    <Property Name="Manager" Type="varchar" MaxLength="25" />
+    <Property Name="Position" Type="nvarchar" MaxLength="255" />
+    <Property Name="PDFFolder" Type="varchar" MaxLength="255" />
+    <Property Name="PATDockAlert" Type="smallint" />
+    <Property Name="PATReturnAlert" Type="smallint" />
+    <Property Name="PATVerifiedAlert" Type="smallint" />
+    <Property Name="PATCloseOutAlert" Type="smallint" />
+    <Property Name="Management" Type="bit" />
+    <Property Name="Directory" Type="smallint" />
+    <Property Name="PhoneDirect" Type="varchar" MaxLength="25" />
+    <Property Name="PhoneCell" Type="varchar" MaxLength="25" />
+    <Property Name="PhoneFax" Type="varchar" MaxLength="25" />
+    <Property Name="PhoneTollFree" Type="varchar" MaxLength="25" />
+    <Property Name="PhoneMain" Type="varchar" MaxLength="25" />
+    <Property Name="PhoneExt" Type="nvarchar" MaxLength="8" />
+    <Property Name="SMSAddress" Type="varchar" MaxLength="25" />
+    <Property Name="AcctFax" Type="nvarchar" MaxLength="50" />
+    <Property Name="HandworkPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Handworkext" Type="nvarchar" MaxLength="8" />
+    <Property Name="HRFax" Type="nvarchar" MaxLength="50" />
+    <Property Name="CCFax" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address1" Type="varchar" MaxLength="150" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="St" Type="varchar" MaxLength="5" />
+    <Property Name="Zip" Type="varchar" MaxLength="15" />
+    <Property Name="PhotoPath" Type="nvarchar" MaxLength="200" />
+    <Property Name="UsePhoto" Type="int" />
+    <Property Name="Internal" Type="smallint" />
+    <Property Name="PositionID" Type="int" />
+    <Property Name="ShiftID" Type="int" />
+    <Property Name="SecurityGroup" Type="int" />
+    <Property Name="igroup" Type="int" />
+    <Property Name="DirectoryAdmin" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="OneBaseModel1StoreContainer">
+    <EntitySet Name="tbl_User" EntityType="Self.tbl_User" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OneBaseModel1StoreContainer" CdmEntityContainer="OneBaseEntities1">
+    <EntitySetMapping Name="tbl_User">
+      <EntityTypeMapping TypeName="OneBaseModel1.tbl_User">
+        <MappingFragment StoreEntitySet="tbl_User">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PWReset" ColumnName="PWReset" />
+          <ScalarProperty Name="AccessLevelID" ColumnName="AccessLevelID" />
+          <ScalarProperty Name="ScreenAccess" ColumnName="ScreenAccess" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="SubDepartment" ColumnName="SubDepartment" />
+          <ScalarProperty Name="WorkCenter" ColumnName="WorkCenter" />
+          <ScalarProperty Name="emailAddress" ColumnName="emailAddress" />
+          <ScalarProperty Name="Hagen_ID" ColumnName="Hagen_ID" />
+          <ScalarProperty Name="EmployeeNo" ColumnName="EmployeeNo" />
+          <ScalarProperty Name="EmployeePhoto" ColumnName="EmployeePhoto" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="PDFFolder" ColumnName="PDFFolder" />
+          <ScalarProperty Name="PATDockAlert" ColumnName="PATDockAlert" />
+          <ScalarProperty Name="PATReturnAlert" ColumnName="PATReturnAlert" />
+          <ScalarProperty Name="PATVerifiedAlert" ColumnName="PATVerifiedAlert" />
+          <ScalarProperty Name="PATCloseOutAlert" ColumnName="PATCloseOutAlert" />
+          <ScalarProperty Name="Management" ColumnName="Management" />
+          <ScalarProperty Name="Directory" ColumnName="Directory" />
+          <ScalarProperty Name="PhoneDirect" ColumnName="PhoneDirect" />
+          <ScalarProperty Name="PhoneCell" ColumnName="PhoneCell" />
+          <ScalarProperty Name="PhoneFax" ColumnName="PhoneFax" />
+          <ScalarProperty Name="PhoneTollFree" ColumnName="PhoneTollFree" />
+          <ScalarProperty Name="PhoneMain" ColumnName="PhoneMain" />
+          <ScalarProperty Name="PhoneExt" ColumnName="PhoneExt" />
+          <ScalarProperty Name="SMSAddress" ColumnName="SMSAddress" />
+          <ScalarProperty Name="AcctFax" ColumnName="AcctFax" />
+          <ScalarProperty Name="HandworkPhone" ColumnName="HandworkPhone" />
+          <ScalarProperty Name="Handworkext" ColumnName="Handworkext" />
+          <ScalarProperty Name="HRFax" ColumnName="HRFax" />
+          <ScalarProperty Name="CCFax" ColumnName="CCFax" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="St" ColumnName="St" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="PhotoPath" ColumnName="PhotoPath" />
+          <ScalarProperty Name="UsePhoto" ColumnName="UsePhoto" />
+          <ScalarProperty Name="Internal" ColumnName="Internal" />
+          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="SecurityGroup" ColumnName="SecurityGroup" />
+          <ScalarProperty Name="igroup" ColumnName="igroup" />
+          <ScalarProperty Name="DirectoryAdmin" ColumnName="DirectoryAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

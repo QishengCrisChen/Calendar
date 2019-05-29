@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OneBaseModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" MaxLength="255" />
+          <Property Name="FName" Type="nvarchar" MaxLength="255" />
+          <Property Name="LName" Type="nvarchar" MaxLength="255" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="255" />
+          <Property Name="Password" Type="nvarchar" MaxLength="255" />
+          <Property Name="PWReset" Type="smallint" />
+          <Property Name="AccessLevelID" Type="smallint" />
+          <Property Name="ScreenAccess" Type="int" />
+          <Property Name="Active" Type="smallint" />
+          <Property Name="Department" Type="nvarchar" MaxLength="255" />
+          <Property Name="SubDepartment" Type="int" />
+          <Property Name="WorkCenter" Type="nvarchar" MaxLength="8" />
+          <Property Name="emailAddress" Type="varchar" MaxLength="500" />
+          <Property Name="Hagen_ID" Type="nvarchar" MaxLength="255" />
+          <Property Name="EmployeeNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="EmployeePhoto" Type="nvarchar" MaxLength="255" />
+          <Property Name="Manager" Type="varchar" MaxLength="25" />
+          <Property Name="Position" Type="nvarchar" MaxLength="255" />
+          <Property Name="PDFFolder" Type="varchar" MaxLength="255" />
+          <Property Name="PATDockAlert" Type="smallint" />
+          <Property Name="PATReturnAlert" Type="smallint" />
+          <Property Name="PATVerifiedAlert" Type="smallint" />
+          <Property Name="PATCloseOutAlert" Type="smallint" />
+          <Property Name="Management" Type="bit" />
+          <Property Name="Directory" Type="smallint" />
+          <Property Name="PhoneDirect" Type="varchar" MaxLength="25" />
+          <Property Name="PhoneCell" Type="varchar" MaxLength="25" />
+          <Property Name="PhoneFax" Type="varchar" MaxLength="25" />
+          <Property Name="PhoneTollFree" Type="varchar" MaxLength="25" />
+          <Property Name="PhoneMain" Type="varchar" MaxLength="25" />
+          <Property Name="PhoneExt" Type="nvarchar" MaxLength="8" />
+          <Property Name="SMSAddress" Type="varchar" MaxLength="25" />
+          <Property Name="AcctFax" Type="nvarchar" MaxLength="50" />
+          <Property Name="HandworkPhone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Handworkext" Type="nvarchar" MaxLength="8" />
+          <Property Name="HRFax" Type="nvarchar" MaxLength="50" />
+          <Property Name="CCFax" Type="nvarchar" MaxLength="50" />
+          <Property Name="Address1" Type="varchar" MaxLength="150" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="St" Type="varchar" MaxLength="5" />
+          <Property Name="Zip" Type="varchar" MaxLength="15" />
+          <Property Name="PhotoPath" Type="nvarchar" MaxLength="200" />
+          <Property Name="UsePhoto" Type="int" />
+          <Property Name="Internal" Type="smallint" />
+          <Property Name="PositionID" Type="int" />
+          <Property Name="ShiftID" Type="int" />
+          <Property Name="SecurityGroup" Type="int" />
+          <Property Name="igroup" Type="int" />
+          <Property Name="DirectoryAdmin" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="OneBaseModel1StoreContainer">
+          <EntitySet Name="tbl_User" EntityType="Self.tbl_User" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OneBaseModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="LName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FullName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PWReset" Type="Int16" />
+          <Property Name="AccessLevelID" Type="Int16" />
+          <Property Name="ScreenAccess" Type="Int32" />
+          <Property Name="Active" Type="Int16" />
+          <Property Name="Department" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SubDepartment" Type="Int32" />
+          <Property Name="WorkCenter" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="emailAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Hagen_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="EmployeeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EmployeePhoto" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Manager" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="Position" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PDFFolder" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PATDockAlert" Type="Int16" />
+          <Property Name="PATReturnAlert" Type="Int16" />
+          <Property Name="PATVerifiedAlert" Type="Int16" />
+          <Property Name="PATCloseOutAlert" Type="Int16" />
+          <Property Name="Management" Type="Boolean" />
+          <Property Name="Directory" Type="Int16" />
+          <Property Name="PhoneDirect" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneCell" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneFax" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneTollFree" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneMain" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneExt" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="SMSAddress" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="AcctFax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HandworkPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Handworkext" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+          <Property Name="HRFax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CCFax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Address1" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="St" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Zip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="PhotoPath" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="UsePhoto" Type="Int32" />
+          <Property Name="Internal" Type="Int16" />
+          <Property Name="PositionID" Type="Int32" />
+          <Property Name="ShiftID" Type="Int32" />
+          <Property Name="SecurityGroup" Type="Int32" />
+          <Property Name="igroup" Type="Int32" />
+          <Property Name="DirectoryAdmin" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="OneBaseEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_User" EntityType="Self.tbl_User" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OneBaseModel1StoreContainer" CdmEntityContainer="OneBaseEntities1">
+          <EntitySetMapping Name="tbl_User">
+            <EntityTypeMapping TypeName="OneBaseModel1.tbl_User">
+              <MappingFragment StoreEntitySet="tbl_User">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="FName" ColumnName="FName" />
+                <ScalarProperty Name="LName" ColumnName="LName" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="PWReset" ColumnName="PWReset" />
+                <ScalarProperty Name="AccessLevelID" ColumnName="AccessLevelID" />
+                <ScalarProperty Name="ScreenAccess" ColumnName="ScreenAccess" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="SubDepartment" ColumnName="SubDepartment" />
+                <ScalarProperty Name="WorkCenter" ColumnName="WorkCenter" />
+                <ScalarProperty Name="emailAddress" ColumnName="emailAddress" />
+                <ScalarProperty Name="Hagen_ID" ColumnName="Hagen_ID" />
+                <ScalarProperty Name="EmployeeNo" ColumnName="EmployeeNo" />
+                <ScalarProperty Name="EmployeePhoto" ColumnName="EmployeePhoto" />
+                <ScalarProperty Name="Manager" ColumnName="Manager" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="PDFFolder" ColumnName="PDFFolder" />
+                <ScalarProperty Name="PATDockAlert" ColumnName="PATDockAlert" />
+                <ScalarProperty Name="PATReturnAlert" ColumnName="PATReturnAlert" />
+                <ScalarProperty Name="PATVerifiedAlert" ColumnName="PATVerifiedAlert" />
+                <ScalarProperty Name="PATCloseOutAlert" ColumnName="PATCloseOutAlert" />
+                <ScalarProperty Name="Management" ColumnName="Management" />
+                <ScalarProperty Name="Directory" ColumnName="Directory" />
+                <ScalarProperty Name="PhoneDirect" ColumnName="PhoneDirect" />
+                <ScalarProperty Name="PhoneCell" ColumnName="PhoneCell" />
+                <ScalarProperty Name="PhoneFax" ColumnName="PhoneFax" />
+                <ScalarProperty Name="PhoneTollFree" ColumnName="PhoneTollFree" />
+                <ScalarProperty Name="PhoneMain" ColumnName="PhoneMain" />
+                <ScalarProperty Name="PhoneExt" ColumnName="PhoneExt" />
+                <ScalarProperty Name="SMSAddress" ColumnName="SMSAddress" />
+                <ScalarProperty Name="AcctFax" ColumnName="AcctFax" />
+                <ScalarProperty Name="HandworkPhone" ColumnName="HandworkPhone" />
+                <ScalarProperty Name="Handworkext" ColumnName="Handworkext" />
+                <ScalarProperty Name="HRFax" ColumnName="HRFax" />
+                <ScalarProperty Name="CCFax" ColumnName="CCFax" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="St" ColumnName="St" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="PhotoPath" ColumnName="PhotoPath" />
+                <ScalarProperty Name="UsePhoto" ColumnName="UsePhoto" />
+                <ScalarProperty Name="Internal" ColumnName="Internal" />
+                <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+                <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+                <ScalarProperty Name="SecurityGroup" ColumnName="SecurityGroup" />
+                <ScalarProperty Name="igroup" ColumnName="igroup" />
+                <ScalarProperty Name="DirectoryAdmin" ColumnName="DirectoryAdmin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
